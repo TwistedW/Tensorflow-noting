@@ -10,7 +10,7 @@ mnist = input_data.read_data_sets("/tmp/data/", one_hot=False)
 # Visualize decoder setting
 # Parameters
 learning_rate = 0.01
-training_epochs = 5
+training_epochs = 50
 batch_size = 256
 display_step = 1
 examples_to_show = 10
@@ -24,17 +24,22 @@ X = tf.placeholder("float", [None, n_input])
 # hidden layer settings
 n_hidden_1 = 256 # 1st layer num features
 n_hidden_2 = 128 # 2nd layer num features
+n_hidden_3 = 64
 weights = {
     'encoder_h1': tf.Variable(tf.random_normal([n_input, n_hidden_1])),
     'encoder_h2': tf.Variable(tf.random_normal([n_hidden_1, n_hidden_2])),
-    'decoder_h1': tf.Variable(tf.random_normal([n_hidden_2, n_hidden_1])),
-    'decoder_h2': tf.Variable(tf.random_normal([n_hidden_1, n_input])),
+    'encoder_h3': tf.Variable(tf.random_normal([n_hidden_2, n_hidden_3])),
+    'decoder_h1': tf.Variable(tf.random_normal([n_hidden_3, n_hidden_2])),
+    'decoder_h2': tf.Variable(tf.random_normal([n_hidden_2, n_hidden_1])),
+    'decoder_h3': tf.Variable(tf.random_normal([n_hidden_1, n_input]))
 }
 biases = {
     'encoder_b1': tf.Variable(tf.random_normal([n_hidden_1])),
     'encoder_b2': tf.Variable(tf.random_normal([n_hidden_2])),
-    'decoder_b1': tf.Variable(tf.random_normal([n_hidden_1])),
-    'decoder_b2': tf.Variable(tf.random_normal([n_input])),
+    'encoder_b3': tf.Variable(tf.random_normal([n_hidden_3])),
+    'decoder_b1': tf.Variable(tf.random_normal([n_hidden_2])),
+    'decoder_b2': tf.Variable(tf.random_normal([n_hidden_1])),
+    'decoder_b3': tf.Variable(tf.random_normal([n_input])),
 }
 
 # Building the encoder
@@ -42,21 +47,27 @@ def encoder(x):
     # Encoder Hidden layer with sigmoid activation #1
     layer_1 = tf.nn.sigmoid(tf.add(tf.matmul(x, weights['encoder_h1']),
                                    biases['encoder_b1']))
-    # Decoder Hidden layer with sigmoid activation #2
+    # Encoder Hidden layer with sigmoid activation #2
     layer_2 = tf.nn.sigmoid(tf.add(tf.matmul(layer_1, weights['encoder_h2']),
                                    biases['encoder_b2']))
-    return layer_2
+    # Encoder Hidden layer with sigmoid activation #3
+    layer_3 = tf.nn.sigmoid(tf.add(tf.matmul(layer_2, weights['encoder_h3']),
+                                   biases['encoder_b3']))
+    return layer_3
 
 
 # Building the decoder
 def decoder(x):
-    # Encoder Hidden layer with sigmoid activation #1
+    # Decoder Hidden layer with sigmoid activation #1
     layer_1 = tf.nn.sigmoid(tf.add(tf.matmul(x, weights['decoder_h1']),
                                    biases['decoder_b1']))
     # Decoder Hidden layer with sigmoid activation #2
     layer_2 = tf.nn.sigmoid(tf.add(tf.matmul(layer_1, weights['decoder_h2']),
                                    biases['decoder_b2']))
-    return layer_2
+    # Decoder Hidden layer with sigmoid activation #3
+    layer_3 = tf.nn.sigmoid(tf.add(tf.matmul(layer_2, weights['decoder_h3']),
+                                   biases['decoder_b3']))
+    return layer_3
 
 # Construct model
 encoder_op = encoder(X)
@@ -93,10 +104,10 @@ with tf.Session() as sess:
 
     # # Applying encode and decode over test set
     encode_decode = sess.run(
-        y_pred, feed_dict={X: mnist.test.images[:examples_to_show]})
+        y_pred, feed_dict={X: mnist.test.images[5:examples_to_show+5]})
     # Compare original images with their reconstructions
-    f, a = plt.subplots(2, 10, figsize=(10, 2))
+    f, a = plt.subplots(2, 10, figsize=(12, 3))
     for i in range(examples_to_show):
-        a[0][i].imshow(np.reshape(mnist.test.images[i], (28, 28)))
+        a[0][i].imshow(np.reshape(mnist.test.images[i+5], (28, 28)))
         a[1][i].imshow(np.reshape(encode_decode[i], (28, 28)))
     plt.show()
