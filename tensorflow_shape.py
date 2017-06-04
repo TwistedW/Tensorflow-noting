@@ -16,6 +16,8 @@ j = tf.concat(values=[t1,t2], axis=0)
 k = tf.concat(values=[t1,t2], axis=1)
 l = tf.stack(values=[t1,t2,t3], axis=0)
 m = tf.reverse(tensor=c, axis=[1,0])
+n = tf.transpose(c, [1,0,2])
+o = tf.one_hot([0,2,1,3],5,3.,1.,-1,tf.float32)
 with tf.Session() as sess:
     init = tf.global_variables_initializer()
     sess.run(init)
@@ -26,3 +28,5 @@ with tf.Session() as sess:
     print(sess.run(j),'\n',sess.run(k))
     print(sess.run(l))
     print(sess.run(m))
+    print(sess.run(n))
+    print(sess.run(o[1]))#thrid
