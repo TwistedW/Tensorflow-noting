@@ -2,8 +2,7 @@ import tensorflow as tf
 import numpy as np
 from tensorflow.examples.tutorials.mnist import input_data
 import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
-from matplotlib import cm
+
 # number 1 to 10 data
 mnist = input_data.read_data_sets('MNIST_data', one_hot=True)
 N_TEST_IMG = 5
@@ -65,7 +64,6 @@ h_fc1_drop = tf.nn.dropout(h_fc1, keep_prob)
 W_fc2 = weight_variable([1024, 10])
 b_fc2 = bias_variable([10])
 prediction = tf.nn.softmax(tf.matmul(h_fc1_drop, W_fc2) + b_fc2)
-#prediction_end = tf.reshape(h_pool2, [-1, 784])
 
 
 # the error between prediction and real data
