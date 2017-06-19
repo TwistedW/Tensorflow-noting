@@ -91,7 +91,7 @@ for step in range(600):
 plt.ioff()
 
 # print 10 predictions from test data
-test_output = sess.run(output, {tf_x: test_x[:10]})
+test_output = sess.run(output, {tf_x: test_x[:20]})
 pred_y = np.argmax(test_output, 1)
 print(pred_y, 'prediction number')
-print(np.argmax(test_y[:10], 1), 'real number')
+print(np.argmax(test_y[:20], 1), 'real number')
