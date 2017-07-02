@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f6efa088-28d9-45c7-9255-ee986166a1f1" name="Default" comment="" />
+    <list default="true" id="f6efa088-28d9-45c7-9255-ee986166a1f1" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/descent_show.py" afterPath="$PROJECT_DIR$/tensorflow_descent_show.py" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -134,11 +136,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="descent_show.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/descent_show.py">
+      <file leaf-file-name="tensorflow_descent_show.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tensorflow_descent_show.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="94">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -382,7 +384,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Tensorflow" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/descent_show.py" />
+      <option name="SCRIPT_NAME" value="E:\Python\Tensorflow\tensorflow_descent_show.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -1027,10 +1029,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/descent_show.py">
+    <entry file="file://$PROJECT_DIR$/tensorflow_descent_show.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="94">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
