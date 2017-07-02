@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f6efa088-28d9-45c7-9255-ee986166a1f1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="f6efa088-28d9-45c7-9255-ee986166a1f1" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +24,7 @@
     <SUITE FILE_PATH="coverage/Tensorflow$tensorflow_dropout.coverage" NAME="tensorflow_dropout Coverage Results" MODIFIED="1498302852949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Tensorflow$tensorflow_weight_initialization.coverage" NAME="tensorflow_weight_initialization Coverage Results" MODIFIED="1496454549780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Tensorflow$Unittests_in_tensorflow_scope_RNN_example_py.coverage" NAME="Unittests in tensorflow_scope_RNN_example.py Coverage Results" MODIFIED="1496319804535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Tensorflow$descent_show.coverage" NAME="descent_show Coverage Results" MODIFIED="1499001431230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Tensorflow$visualize_gradient_descent.coverage" NAME="visualize_gradient_descent Coverage Results" MODIFIED="1499001052749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Tensorflow$tensorflow_Complex_operation.coverage" NAME="tensorflow_Complex_operation Coverage Results" MODIFIED="1496634383370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Tensorflow$tensorflow_session.coverage" NAME="tensorflow_session Coverage Results" MODIFIED="1495019578905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -123,11 +122,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="visualize_gradient_descent.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="visualize_gradient_descent.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/visualize_gradient_descent.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="55" column="10" lean-forward="false" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
+            <state relative-caret-position="285">
+              <caret line="23" column="45" lean-forward="true" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="descent_show.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/descent_show.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -143,16 +154,6 @@
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tensorflow_RNN.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tensorflow_RNN.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2325">
-              <caret line="94" column="25" lean-forward="false" selection-start-line="94" selection-start-column="25" selection-end-line="94" selection-end-column="25" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -224,6 +225,7 @@
         <option value="$PROJECT_DIR$/tensorflow_dropout_show.py" />
         <option value="$PROJECT_DIR$/tensorflow_batch_normalization_new.py" />
         <option value="$PROJECT_DIR$/visualize_gradient_descent.py" />
+        <option value="$PROJECT_DIR$/descent_show.py" />
       </list>
     </option>
   </component>
@@ -290,26 +292,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.visualize_gradient_descent">
-    <configuration default="false" name="tensorflow_RNN_new" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Tensorflow" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tensorflow_RNN_new.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.descent_show">
     <configuration default="false" name="tensorflow_dropout" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -381,6 +364,25 @@
       <module name="Tensorflow" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/visualize_gradient_descent.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="descent_show" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Tensorflow" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/descent_show.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -552,19 +554,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in tensorflow_scope_RNN_example.py" />
-      <item index="1" class="java.lang.String" itemvalue="Python.tensorflow_RNN_new" />
-      <item index="2" class="java.lang.String" itemvalue="Python.tensorflow_dropout" />
-      <item index="3" class="java.lang.String" itemvalue="Python.tensorflow_dropout_show" />
-      <item index="4" class="java.lang.String" itemvalue="Python.tensorflow_batch_normalization_new" />
-      <item index="5" class="java.lang.String" itemvalue="Python.visualize_gradient_descent" />
+      <item index="1" class="java.lang.String" itemvalue="Python.tensorflow_dropout" />
+      <item index="2" class="java.lang.String" itemvalue="Python.tensorflow_dropout_show" />
+      <item index="3" class="java.lang.String" itemvalue="Python.tensorflow_batch_normalization_new" />
+      <item index="4" class="java.lang.String" itemvalue="Python.visualize_gradient_descent" />
+      <item index="5" class="java.lang.String" itemvalue="Python.descent_show" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.visualize_gradient_descent" />
-        <item index="1" class="java.lang.String" itemvalue="Python.tensorflow_batch_normalization_new" />
-        <item index="2" class="java.lang.String" itemvalue="Python.tensorflow_dropout_show" />
-        <item index="3" class="java.lang.String" itemvalue="Python.tensorflow_dropout" />
-        <item index="4" class="java.lang.String" itemvalue="Python.tensorflow_RNN_new" />
+        <item index="0" class="java.lang.String" itemvalue="Python.descent_show" />
+        <item index="1" class="java.lang.String" itemvalue="Python.visualize_gradient_descent" />
+        <item index="2" class="java.lang.String" itemvalue="Python.tensorflow_batch_normalization_new" />
+        <item index="3" class="java.lang.String" itemvalue="Python.tensorflow_dropout_show" />
+        <item index="4" class="java.lang.String" itemvalue="Python.tensorflow_dropout" />
       </list>
     </recent_temporary>
   </component>
@@ -653,13 +655,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tensorflow_dropout.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1000">
-          <caret line="43" column="4" lean-forward="true" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tensorflow_liner_show.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -1024,8 +1019,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/visualize_gradient_descent.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="55" column="10" lean-forward="false" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
+        <state relative-caret-position="285">
+          <caret line="23" column="45" lean-forward="true" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/descent_show.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
