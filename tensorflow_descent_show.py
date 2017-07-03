@@ -11,13 +11,8 @@ INIT_PARAMS = [[5, 4],
 
 x = np.linspace(-1, 1, 200, dtype=np.float32)
 
-# test 1
-# y_fun = lambda a, b: a * x + b
-# tf_y_fun = lambda a, b: a * x + b
-
-# test 2
-y_fun = lambda a, b: a * x**3 + b * x**2
-tf_y_fun = lambda a, b: a * x**3 + b * x**2
+y_fun = lambda a, b: a*x**3 + b*x**2
+tf_y_fun = lambda a, b: a*x**3 + b*x**2
 
 noise = np.random.randn(200)/10
 y = y_fun(*REAL_PARAMS) + noise         # target
