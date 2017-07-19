@@ -25,7 +25,7 @@ prediction = add_layer(hide_layer, 10, 1, activation_function=None)
 
 loss = tf.reduce_mean(tf.reduce_sum(tf.square(ys - prediction), reduction_indices=[1]))
 optimizer = tf.train.GradientDescentOptimizer(0.1)
-#optimizer = tf.train.AdadeltaOptimizer(0.1)
+#optimizer = tf.train.AdadeltaOptimizer(0.1) choose
 #optimizer = tf.train.RMSPropOptimizer(0.1)
 train = optimizer.minimize(loss)
 
