@@ -34,7 +34,7 @@ init = tf.initialize_all_variables()
 fig = plt.figure()
 ax = fig.add_subplot(1, 1, 1)
 ax.scatter(x_data, y_data)
-#plt.ylim(-1, 1)
+plt.ylim(-1, 1)
 plt.ion()
 plt.show()
 
