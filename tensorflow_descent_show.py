@@ -11,8 +11,8 @@ INIT_PARAMS = [[5, 4],
 
 x = np.linspace(-1, 1, 200, dtype=np.float32)
 
-y_fun = lambda a, b: a*x**3 + b*x**2
-tf_y_fun = lambda a, b: a*x**3 + b*x**2
+y_fun = lambda a,b: a*x**3 + b*x**2
+tf_y_fun = lambda a,b: a*x**3 + b*x**2
 
 noise = np.random.randn(200)/10
 y = y_fun(*REAL_PARAMS) + noise         # target
@@ -28,7 +28,9 @@ with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
     for t in range(400):
         a_, b_, mse_ = sess.run([a, b, mse])
-        a_list.append(a_); b_list.append(b_); cost_list.append(mse_)    # record parameter changes
+        a_list.append(a_)
+        b_list.append(b_)
+        cost_list.append(mse_)    # record parameter changes
         result, _ = sess.run([pred, train_op])                          # training
 
 
