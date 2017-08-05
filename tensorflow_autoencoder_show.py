@@ -61,7 +61,7 @@ for step in range(8000):
     _, encoded_, decoded_, loss_ = sess.run([train, encoded, decoded, loss], {tf_x: b_x})
 
     if step % 100 == 0:     # plotting
-        print('train loss: %.4f' % loss_)
+        print('train loss: %.5f' % loss_)
         # plotting decoded image (second row)
         decoded_data = sess.run(decoded, {tf_x: view_data})
         for i in range(N_TEST_IMG):
