@@ -67,7 +67,9 @@ for t in range(500):
         plt.plot(test_x, d_out_, 'b--', lw=3, label='dropout(50%)')
         plt.text(0, -1.2, 'overfitting loss=%.4f' % o_loss_, fontdict={'size': 20, 'color':  'red'})
         plt.text(0, -1.5, 'dropout loss=%.4f' % d_loss_, fontdict={'size': 20, 'color': 'blue'})
-        plt.legend(loc='upper left'); plt.ylim((-2.5, 2.5)); plt.pause(0.1)
+        plt.legend(loc='upper left')
+        plt.ylim((-2.8, 2.8))
+        plt.pause(0.01)
 
 plt.ioff()
 plt.show()
