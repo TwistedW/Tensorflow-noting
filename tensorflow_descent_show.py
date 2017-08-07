@@ -34,7 +34,7 @@ with tf.Session() as sess:
         result, _ = sess.run([pred, train_op])                          # training
 
 
-print('a=', a_, 'b=', b_)
+print('Quadratic function', 'a=', a_, 'b=', b_)
 plt.figure(1)
 plt.scatter(x, y, c='b')    # plot data
 plt.plot(x, result, 'r-', lw=2)   # plot line fitting
