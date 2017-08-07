@@ -28,7 +28,9 @@ with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
     for t in range(400):
         a_, b_, mse_ = sess.run([a, b, mse])
-        a_list.append(a_); b_list.append(b_); cost_list.append(mse_)    # record parameter changes
+        a_list.append(a_)
+        b_list.append(b_)
+        cost_list.append(mse_)    # record parameter changes
         result, _ = sess.run([pred, train_op])                          # training
 
 
