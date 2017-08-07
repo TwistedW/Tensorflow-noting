@@ -31,10 +31,10 @@ with tf.Session() as sess:
         a_list.append(a_)
         b_list.append(b_)
         cost_list.append(mse_)    # record parameter changes
-        result, _ = sess.run([pred, train_op])                          # training
+        result, _ = sess.run([pred, train_op]) # training
 
 
-print('a=', a_, 'b=', b_)
+print('liner', 'a=', a_, 'b=', b_)
 plt.figure(1)
 plt.scatter(x, y, c='b')    # plot data
 plt.plot(x, result, 'r-', lw=2)   # plot line fitting
