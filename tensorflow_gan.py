@@ -43,7 +43,7 @@ with tf.variable_scope('Discriminator'):
     # probability that the art work is made by artist
     prob_artist1 = tf.layers.dense(D_l1, 1, tf.nn.sigmoid, name='out', reuse=True)
 
-D_loss = -tf.reduce_mean(tf.log(prob_artist0) + tf.log(1-prob_artist1))
+D_loss = -tf.reduce_mean(tf.log(prob_artist0) + tf.log(1-prob_artist1)) #important
 G_loss = tf.reduce_mean(tf.log(1-prob_artist1))
 
 train_D = tf.train.AdamOptimizer(LR_D).minimize(
