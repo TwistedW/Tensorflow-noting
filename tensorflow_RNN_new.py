@@ -53,7 +53,11 @@ for step in range(60):
     _, pred_, final_s_ = sess.run([train_op, outs, final_s], feed_dict)     # train
 
     # plotting
-    plt.plot(steps, y.flatten(), 'r-'); plt.plot(steps, pred_.flatten(), 'b-')
-    plt.ylim((-1.2, 1.2)); plt.draw(); plt.pause(0.05)
+    plt.plot(steps, y.flatten(), 'r-')
+    plt.plot(steps, pred_.flatten(), 'b-')
+    plt.ylim((-1.2, 1.2))
+    plt.draw()
+    plt.pause(0.05)
 
-plt.ioff(); plt.show()
+plt.ioff()
+plt.show()
