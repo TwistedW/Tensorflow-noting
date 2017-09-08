@@ -2,8 +2,8 @@ import tensorflow as tf
 import numpy as np
 import matplotlib.pyplot as plt
 
-tf.set_random_seed(1)
-np.random.seed(1)
+tf.set_random_seed(1) #random seed
+np.random.seed(1) #random seed
 
 # Hyper Parameters
 BATCH_SIZE = 64
@@ -12,6 +12,7 @@ LR_D = 0.0001           # learning rate for discriminator
 N_IDEAS = 5             # think of this as number of ideas for generating an art work (Generator)
 ART_COMPONENTS = 15     # it could be total point G can draw in the canvas
 PAINT_POINTS = np.vstack([np.linspace(-1, 1, ART_COMPONENTS) for _ in range(BATCH_SIZE)])
+#产生一等差数组，一共产生ART_COMPONENTS个数，整个数组分成ART_COMPONENTS-1段,垂直拼接
 
 # show our beautiful painting range
 # plt.plot(PAINT_POINTS[0], 2 * np.power(PAINT_POINTS[0], 2) + 1, c='#74BCFF', lw=3, label='upper bound')
@@ -56,6 +57,7 @@ sess.run(tf.global_variables_initializer())
 
 plt.ion()   # something about continuous plotting
 #plt.show()
+
 for step in range(5000):
     artist_paintings = artist_works()           # real painting from artist
     G_ideas = np.random.randn(BATCH_SIZE, N_IDEAS)
