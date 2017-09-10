@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 # 导入数字集0-9
 mnist = input_data.read_data_sets('MNIST_data', one_hot=True)
-N_TEST_IMG = 10
+N_TEST_IMG = 5
 
 def compute_accuracy(v_xs, v_ys):
     global prediction
@@ -75,7 +75,7 @@ init = tf.global_variables_initializer()
 sess.run(init)
 
 # initialize figure
-f, a = plt.subplots(2, N_TEST_IMG, figsize=(10, 2))
+f, a = plt.subplots(2, N_TEST_IMG, figsize=(5, 2))
 plt.ion()   #为了在图像上持续显示
 
 # 初始原始数据显示
@@ -95,6 +95,8 @@ for step in range(1000):
         for i in range(N_TEST_IMG):
             a[1][i].clear()
             a[1][i].imshow(np.reshape(results[i], (10, 1)), cmap='gray')
+            plt.text(-57, -7, 'real', fontdict={'size': 15})
+            plt.text(-57, 7, 'pre', fontdict={'size': 15})
             a[1][i].set_xticks(())
             a[1][i].set_yticks(())
         plt.draw()

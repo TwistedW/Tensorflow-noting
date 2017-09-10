@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6efa088-28d9-45c7-9255-ee986166a1f1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensorflow_CNN_show_update.py" afterPath="$PROJECT_DIR$/tensorflow_CNN_show_update.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensorflow_cnn_show_exp.py" afterPath="$PROJECT_DIR$/tensorflow_cnn_show_exp.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,7 +13,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Tensorflow$tensorflow_matrix_operations.coverage" NAME="tensorflow_matrix_operations Coverage Results" MODIFIED="1496551412289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Tensorflow$tensorflow_gan.coverage" NAME="tensorflow_gan Coverage Results" MODIFIED="1504838593048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Tensorflow$tensorflow_gan.coverage" NAME="tensorflow_gan Coverage Results" MODIFIED="1505009849314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Tensorflow$tensorflow_liner_show.coverage" NAME="tensorflow_liner_show Coverage Results" MODIFIED="1495033596670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Tensorflow$tensorflow_placeholder.coverage" NAME="tensorflow_placeholder Coverage Results" MODIFIED="1495022785034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Tensorflow$tensorflow_dropout_show.coverage" NAME="tensorflow_dropout_show Coverage Results" MODIFIED="1501899090594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -25,7 +24,7 @@
     <SUITE FILE_PATH="coverage/Tensorflow$tensorflow_sequence_indexing.coverage" NAME="tensorflow_sequence_indexing Coverage Results" MODIFIED="1501898632026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Tensorflow$tensorflow_segmentation.coverage" NAME="tensorflow_segmentation Coverage Results" MODIFIED="1496654025841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Tensorflow$tensorflow_dropout.coverage" NAME="tensorflow_dropout Coverage Results" MODIFIED="1498302852949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Tensorflow$tensorflow_cnn_show_exp.coverage" NAME="tensorflow_cnn_show_exp Coverage Results" MODIFIED="1505008237521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Tensorflow$tensorflow_cnn_show_exp.coverage" NAME="tensorflow_cnn_show_exp Coverage Results" MODIFIED="1505009872815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Tensorflow$tensorflow_weight_initialization.coverage" NAME="tensorflow_weight_initialization Coverage Results" MODIFIED="1501899372408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Tensorflow$Unittests_in_tensorflow_scope_RNN_example_py.coverage" NAME="Unittests in tensorflow_scope_RNN_example.py Coverage Results" MODIFIED="1496319804535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Tensorflow$descent_show.coverage" NAME="descent_show Coverage Results" MODIFIED="1499001431230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -105,8 +104,8 @@
       <file leaf-file-name="tensorflow_gan.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tensorflow_gan.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+            <state relative-caret-position="175">
+              <caret line="69" column="80" lean-forward="false" selection-start-line="69" selection-start-column="72" selection-end-line="69" selection-end-column="83" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -126,11 +125,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tensorflow_cnn_show_exp.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="tensorflow_cnn_show_exp.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tensorflow_cnn_show_exp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="59" column="58" lean-forward="true" selection-start-line="59" selection-start-column="58" selection-end-line="59" selection-end-column="58" />
+            <state relative-caret-position="544">
+              <caret line="102" column="23" lean-forward="true" selection-start-line="102" selection-start-column="23" selection-end-line="102" selection-end-column="23" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -138,10 +137,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tensorflow_CNN_show_update.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tensorflow_CNN_show_update.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tensorflow_CNN_show_update.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-481">
+            <state relative-caret-position="-331">
               <caret line="66" column="14" lean-forward="false" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
@@ -228,8 +227,8 @@
         <option value="$PROJECT_DIR$/tensorflow_descent_show.py" />
         <option value="$PROJECT_DIR$/tensorflow_RNN_new.py" />
         <option value="$PROJECT_DIR$/tensorflow_gan.py" />
-        <option value="$PROJECT_DIR$/tensorflow_cnn_show_exp.py" />
         <option value="$PROJECT_DIR$/tensorflow_CNN_show_update.py" />
+        <option value="$PROJECT_DIR$/tensorflow_cnn_show_exp.py" />
       </list>
     </option>
   </component>
@@ -296,7 +295,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.tensorflow_CNN_show_update">
+  <component name="RunManager" selected="Python.tensorflow_cnn_show_exp">
     <configuration default="false" name="tensorflow_RNN_new" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -566,10 +565,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.tensorflow_CNN_show_update" />
-        <item index="1" class="java.lang.String" itemvalue="Python.tensorflow_cnn_show_exp" />
-        <item index="2" class="java.lang.String" itemvalue="Python.tensorflow_cnn_show" />
-        <item index="3" class="java.lang.String" itemvalue="Python.tensorflow_gan" />
+        <item index="0" class="java.lang.String" itemvalue="Python.tensorflow_cnn_show_exp" />
+        <item index="1" class="java.lang.String" itemvalue="Python.tensorflow_gan" />
+        <item index="2" class="java.lang.String" itemvalue="Python.tensorflow_CNN_show_update" />
+        <item index="3" class="java.lang.String" itemvalue="Python.tensorflow_cnn_show" />
         <item index="4" class="java.lang.String" itemvalue="Python.tensorflow_RNN_new" />
       </list>
     </recent_temporary>
@@ -998,16 +997,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow_gan.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tensorflow_cnn_show.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -1018,20 +1007,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow_cnn_show_exp.py">
+    <entry file="file://$PROJECT_DIR$/tensorflow_CNN_show_update.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="59" column="58" lean-forward="true" selection-start-line="59" selection-start-column="58" selection-end-line="59" selection-end-column="58" />
+        <state relative-caret-position="-331">
+          <caret line="66" column="14" lean-forward="false" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow_CNN_show_update.py">
+    <entry file="file://$PROJECT_DIR$/tensorflow_gan.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-481">
-          <caret line="66" column="14" lean-forward="false" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
+        <state relative-caret-position="175">
+          <caret line="69" column="80" lean-forward="false" selection-start-line="69" selection-start-column="72" selection-end-line="69" selection-end-column="83" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow_cnn_show_exp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="102" column="23" lean-forward="true" selection-start-line="102" selection-start-column="23" selection-end-line="102" selection-end-column="23" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
