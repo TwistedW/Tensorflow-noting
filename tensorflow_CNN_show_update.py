@@ -61,7 +61,7 @@ try:
     HAS_SK = True
 except:
     HAS_SK = False
-print('\nPlease install sklearn for layer visualization!\n')
+    print('\nPlease install sklearn for layer visualization!\n')
 def plot_with_labels(lowDWeights, labels):
     plt.cla()
     X, Y = lowDWeights[:, 0], lowDWeights[:, 1]
