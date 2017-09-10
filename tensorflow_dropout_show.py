@@ -19,11 +19,11 @@ test_x = x.copy()
 test_y = test_x + 0.3*np.random.randn(N_SAMPLES)[:, np.newaxis]
 
 # show data
-plt.scatter(x, y, c='magenta', s=50, alpha=0.5, label='train')
-plt.scatter(test_x, test_y, c='cyan', s=50, alpha=0.5, label='test')
-plt.legend(loc='upper left')
-plt.ylim((-2.5, 2.5))
-plt.show()
+# plt.scatter(x, y, c='magenta', s=50, alpha=0.5, label='train')
+# plt.scatter(test_x, test_y, c='cyan', s=50, alpha=0.5, label='test')
+# plt.legend(loc='upper left')
+# plt.ylim((-2.5, 2.5))
+# plt.show()
 
 # tf placeholders
 tf_x = tf.placeholder(tf.float32, [None, 1])
