@@ -15,7 +15,7 @@ def add_layer(inputs, in_size, out_size, activation_function=None):
 
 x_data = np.linspace(-1, 1, 300)[:, np.newaxis]
 noise = np.random.normal(0, 0.05, x_data.shape)
-y_data = np.square(x_data) - 0.3 + noise
+y_data = np.square(x_data) + noise
 
 xs = tf.placeholder(tf.float32, [None, 1])
 ys = tf.placeholder(tf.float32, [None, 1])
@@ -34,21 +34,23 @@ init = tf.initialize_all_variables()
 fig = plt.figure()
 ax = fig.add_subplot(1, 1, 1)
 ax.scatter(x_data, y_data)
-plt.ylim(-1, 1)
+plt.ylim(-0.5, 1.2)
 plt.ion()
-plt.show()
 
 with tf.Session() as sess:
     sess.run(init)
-    for i in range(2001):
+    for i in range(5001):
         sess.run(train, feed_dict={xs: x_data, ys: y_data})
         if i % 100 == 0:
             try:
                 ax.lines.remove(lines[0])
+                text.remove()
             except Exception:
                 pass
-            prediction_y = sess.run(prediction, feed_dict={xs: x_data, ys: y_data})
+            prediction_y, loss_y = sess.run([prediction, loss], feed_dict={xs: x_data, ys: y_data})
             lines = ax.plot(x_data, prediction_y, 'r-', lw=5)
-            plt.pause(0.1)
-            #print(sess.run(loss, feed_dict={xs: x_date, ys: y_date}))
-
+            text = plt.text(-0.35, -0.25, 'loss=%.5f' % loss_y, fontdict={'size': 15})
+            plt.draw()
+            plt.pause(0.2)
+            #print(sess.run(loss, feed_dict={xs: x_data, ys: y_data}))
+plt.show()
