@@ -52,5 +52,6 @@ with tf.Session() as sess:
             text = plt.text(-0.35, -0.25, 'loss=%.5f' % loss_y, fontdict={'size': 15})
             plt.draw()
             plt.pause(0.2)
+            
             #print(sess.run(loss, feed_dict={xs: x_data, ys: y_data}))
 plt.show()
