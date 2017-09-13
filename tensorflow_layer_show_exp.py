@@ -2,16 +2,18 @@ import tensorflow as tf
 import numpy as np
 import matplotlib.pyplot as plt
 
-#add layer to create a model
+
+# add layer to create a model
 def add_layer(inputs, in_size, out_size, activation_function=None):
     Weights = tf.Variable(tf.random_normal([in_size, out_size]))
-    biases = tf.Variable(tf.zeros([1, out_size])+0.01)
+    biases = tf.Variable(tf.zeros([1, out_size]) + 0.01)
     Wx_plus_b = tf.matmul(inputs, Weights) + biases
     if activation_function is None:
         outputs = Wx_plus_b
     else:
         outputs = activation_function(Wx_plus_b)
     return outputs
+
 
 x_data = np.linspace(-1, 1, 300)[:, np.newaxis]
 noise = np.random.normal(0, 0.05, x_data.shape)
@@ -25,16 +27,11 @@ prediction = add_layer(hide_layer, 10, 1, activation_function=None)
 
 loss = tf.reduce_mean(tf.reduce_sum(tf.square(ys - prediction), reduction_indices=[1]))
 optimizer = tf.train.GradientDescentOptimizer(0.1)
-#optimizer = tf.train.AdadeltaOptimizer(0.1) choose
-#optimizer = tf.train.RMSPropOptimizer(0.1)
+# optimizer = tf.train.AdadeltaOptimizer(0.1) choose
+# optimizer = tf.train.RMSPropOptimizer(0.1)
 train = optimizer.minimize(loss)
 
 init = tf.initialize_all_variables()
-
-fig = plt.figure()
-ax = fig.add_subplot(1, 1, 1)
-ax.scatter(x_data, y_data, label='test')
-plt.ylim(-0.5, 1.2)
 plt.ion()
 
 with tf.Session() as sess:
@@ -53,6 +50,6 @@ with tf.Session() as sess:
             plt.legend(loc='upper left')
             plt.draw()
             plt.pause(0.2)
-            
-            #print(sess.run(loss, feed_dict={xs: x_data, ys: y_data}))
+
+            # print(sess.run(loss, feed_dict={xs: x_data, ys: y_data}))
 plt.show()
