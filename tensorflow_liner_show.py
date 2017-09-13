@@ -29,20 +29,16 @@ init = tf.initialize_all_variables()
 
 sess = tf.Session()
 sess.run(init) #activate neural network
-
-fig = plt.figure()
-ax = fig.add_subplot(1, 1, 1)
-ax.scatter(x_date, y_date)
 plt.ion()
-plt.show()
 for step in range(1001):
     sess.run(train)
     if step % 20 == 0:
-        try:
-            ax.lines.remove(lines[0])
-        except Exception:
-            pass
+        plt.cla()
+        plt.scatter(x_date, y_date, label='test data')
         print(step, sess.run(Weights), sess.run(biases))
         prediction_y = sess.run(y)
-        lines = ax.plot(x_date, prediction_y, 'r-', lw=5)
+        lines = plt.plot(x_date, prediction_y, 'r-', lw=5, label='learning lines')
+        plt.text(0.35, 0.5, 'loss=%.5f' % sess.run(loss), fontdict={'size': 15, 'color': 'green'})
+        plt.legend(loc='upper left')
         plt.pause(0.1)
+plt.show()
