@@ -39,15 +39,13 @@ with tf.Session() as sess:
     for i in range(5001):
         sess.run(train, feed_dict={xs: x_data, ys: y_data})
         if i % 100 == 0:
-            try:
-                ax.lines.remove(lines[0])
-                text.remove()
-            except Exception:
-                pass
+            plt.cla()
+            plt.scatter(x_data, y_data, c='cyan', label='test data')
             prediction_y, loss_y = sess.run([prediction, loss], feed_dict={xs: x_data, ys: y_data})
-            lines = ax.plot(x_data, prediction_y, 'r-', lw=5, label='learning lines')
+            lines = plt.plot(x_data, prediction_y, 'r-', lw=5, label='learning lines')
             text = plt.text(-0.35, -0.25, 'loss=%.5f' % loss_y, fontdict={'size': 15})
             plt.legend(loc='upper left')
+            plt.ylim(-0.5, 1.4)
             plt.draw()
             plt.pause(0.2)
 
