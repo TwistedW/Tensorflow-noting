@@ -52,6 +52,7 @@ sess.run(init)
 for i in range(500):
     # here to determine the keeping probability
     sess.run(train_step, feed_dict={xs: X_train, ys: y_train, keep_prob: 0.5})
+    #sess.run(train_step, feed_dict={xs: X_train, ys: y_train, keep_prob: 1})
     if i % 50 == 0:
         # record loss
         train_result = sess.run(merged, feed_dict={xs: X_train, ys: y_train, keep_prob: 1})
