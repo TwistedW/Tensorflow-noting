@@ -16,9 +16,9 @@ test_y = mnist.test.labels[:2000]
 # plot one example
 print(mnist.train.images.shape)     # (55000, 28 * 28)
 print(mnist.train.labels.shape)   # (55000, 10)
-plt.imshow(mnist.train.images[0].reshape((28, 28)), cmap='gray')
-plt.title('%i' % np.argmax(mnist.train.labels[0]))
-plt.show()
+# plt.imshow(mnist.train.images[0].reshape((28, 28)), cmap='gray')
+# plt.title('%i' % np.argmax(mnist.train.labels[0]))
+# plt.show()
 
 tf_x = tf.placeholder(tf.float32, [None, 28*28])
 image = tf.reshape(tf_x, [-1, 28, 28, 1])              # (batch, height, width, channel)
