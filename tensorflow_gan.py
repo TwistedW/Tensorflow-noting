@@ -75,6 +75,5 @@ for step in range(5000):
         plt.legend(loc='upper right', fontsize=12)
         plt.draw()
         plt.pause(0.01)
-
 plt.ioff()
 plt.show()

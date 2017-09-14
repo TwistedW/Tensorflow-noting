@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6efa088-28d9-45c7-9255-ee986166a1f1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensorflow_dropout.py" afterPath="$PROJECT_DIR$/tensorflow_dropout.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensorflow_gan.py" afterPath="$PROJECT_DIR$/tensorflow_gan.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -68,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tensorflow_dropout.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tensorflow_dropout.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tensorflow_dropout.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="54" column="5" lean-forward="false" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+            <state relative-caret-position="75">
+              <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -162,11 +162,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tensorflow_gan.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="tensorflow_gan.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tensorflow_gan.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1525">
-              <caret line="63" column="22" lean-forward="false" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
+            <state relative-caret-position="1900">
+              <caret line="76" column="23" lean-forward="false" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="23" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -227,7 +227,6 @@
         <option value="$PROJECT_DIR$/tensorflow_descent_show_another.py" />
         <option value="$PROJECT_DIR$/tensorflow_descent_show.py" />
         <option value="$PROJECT_DIR$/tensorflow_RNN_new.py" />
-        <option value="$PROJECT_DIR$/tensorflow_gan.py" />
         <option value="$PROJECT_DIR$/tensorflow_cnn_show_exp.py" />
         <option value="$PROJECT_DIR$/tensorflow-mnist/mnist_1.0_softmax.py" />
         <option value="$PROJECT_DIR$/tensorflow_dropout_show.py" />
@@ -236,6 +235,7 @@
         <option value="$PROJECT_DIR$/tensorflow_liner_show.py" />
         <option value="$PROJECT_DIR$/tensorflow_CNN_show_update.py" />
         <option value="$PROJECT_DIR$/tensorflow_dropout.py" />
+        <option value="$PROJECT_DIR$/tensorflow_gan.py" />
       </list>
     </option>
   </component>
@@ -969,16 +969,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow_gan.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1525">
-          <caret line="63" column="22" lean-forward="false" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tensorflow_liner_show.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="925">
@@ -1031,8 +1021,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tensorflow_dropout.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="54" column="5" lean-forward="false" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+        <state relative-caret-position="75">
+          <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow_gan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1900">
+          <caret line="76" column="23" lean-forward="false" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="23" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
