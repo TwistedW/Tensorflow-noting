@@ -15,7 +15,7 @@
 
 import tensorflow as tf
 from tensorflow.python.framework import tensor_util
-import tensorflowvisu
+import tensorflow_mnist.tensorflowvisu as tensorflowvisu
 import math
 from tensorflow.contrib.learn.python.learn.datasets.mnist import read_data_sets
 tf.set_random_seed(0.0)
@@ -31,7 +31,8 @@ mnist = read_data_sets("data", one_hot=True, reshape=False, validation_size=0)
 #   @ @ @ @ @ @ @ @     -- conv. layer +BN 5x5x6=>48 stride 2      W2 [5, 5, 6, 48]        B2 [48]
 #   ∶∶∶∶∶∶∶∶∶∶∶∶∶∶∶                                                Y2 [batch, 14, 14, 12]
 #     @ @ @ @ @ @       -- conv. layer +BN 4x4x12=>64 stride 2     W3 [4, 4, 12, 64]       B3 [64]
-#     ∶∶∶∶∶∶∶∶∶∶∶                                                  Y3 [batch, 7, 7, 24] => reshaped to YY [batch, 7*7*24]
+#     ∶∶∶∶∶∶∶∶∶∶∶
+# Y3 [batch, 7, 7, 24] => reshaped to YY [batch, 7*7*24]
 #      \x/x\x\x/ ✞      -- fully connected layer (relu+dropout+BN) W4 [7*7*24, 200]       B4 [200]
 #       · · · ·                                                    Y4 [batch, 200]
 #       \x/x\x/         -- fully connected layer (softmax)         W5 [200, 10]           B5 [10]
