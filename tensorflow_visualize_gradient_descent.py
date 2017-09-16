@@ -21,6 +21,7 @@ x = np.linspace(-1, 1, 200, dtype=np.float32)
 
 # test 3
 y_fun = lambda a, b: np.sin(b*np.cos(a*x))
+
 tf_y_fun = lambda a, b: tf.sin(b*tf.cos(a*x))
 
 noise = np.random.randn(200)/10
