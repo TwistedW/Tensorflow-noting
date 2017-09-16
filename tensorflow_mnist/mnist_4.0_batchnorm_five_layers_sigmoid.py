@@ -14,7 +14,7 @@
 # limitations under the License.
 
 import tensorflow as tf
-import tensorflowvisu
+import tensorflow_mnist.tensorflowvisu
 import math
 from tensorflow.contrib.learn.python.learn.datasets.mnist import read_data_sets
 tf.set_random_seed(0)
@@ -143,11 +143,13 @@ allbiases  = tf.concat([tf.reshape(O1, [-1]), tf.reshape(O2, [-1]), tf.reshape(O
 # to use for sigmoid
 allactivations = tf.concat([tf.reshape(Y1, [-1]), tf.reshape(Y2, [-1]), tf.reshape(Y3, [-1]), tf.reshape(Y4, [-1])], 0)
 # to use for RELU
-#allactivations = tf.concat([tf.reduce_max(Y1, [0]), tf.reduce_max(Y2, [0]), tf.reduce_max(Y3, [0]), tf.reduce_max(Y4, [0])], 0)
+#allactivations = tf.concat([tf.reduce_max(Y1, [0]), tf.reduce_max(Y2, [0]),
+# tf.reduce_max(Y3, [0]), tf.reduce_max(Y4, [0])], 0)
 alllogits = tf.concat([tf.reshape(Y1l, [-1]), tf.reshape(Y2l, [-1]), tf.reshape(Y3l, [-1]), tf.reshape(Y4l, [-1])], 0)
-I = tensorflowvisu.tf_format_mnist_images(X, Y, Y_)
-It = tensorflowvisu.tf_format_mnist_images(X, Y, Y_, 1000, lines=25)
-datavis = tensorflowvisu.MnistDataVis(title4="Logits", title5="activations", histogram4colornum=2, histogram5colornum=2)
+I = tensorflow_mnist.tensorflowvisu.tf_format_mnist_images(X, Y, Y_)
+It = tensorflow_mnist.tensorflowvisu.tf_format_mnist_images(X, Y, Y_, 1000, lines=25)
+datavis = tensorflow_mnist.tensorflowvisu.MnistDataVis(title4="Logits", title5="activations",
+                                                       histogram4colornum=2, histogram5colornum=2)
 
 
 # training step, the learning rate is a placeholder
@@ -194,7 +196,8 @@ def training_step(i, update_test_data, update_train_data):
     sess.run(train_step, {X: batch_X, Y_: batch_Y, lr: learning_rate, tst: False})
     sess.run(update_ema, {X: batch_X, Y_: batch_Y, tst: False, iter: i})
 
-datavis.animate(training_step, iterations=10000+1, train_data_update_freq=20, test_data_update_freq=100, more_tests_at_start=True)
+datavis.animate(training_step, iterations=10000+1, train_data_update_freq=20, test_data_update_freq=100,
+                more_tests_at_start=True)
 
 # to save the animation as a movie, add save_movie=True as an argument to datavis.animate
 # to disable the visualisation use the following line instead of the datavis.animate line
