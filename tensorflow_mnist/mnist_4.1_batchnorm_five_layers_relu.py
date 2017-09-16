@@ -14,7 +14,7 @@
 # limitations under the License.
 
 import tensorflow as tf
-import tensorflowvisu
+import tensorflow_mnist.tensorflowvisu as tensorflowvisu
 import math
 from tensorflow.contrib.learn.python.learn.datasets.mnist import read_data_sets
 tf.set_random_seed(0)
