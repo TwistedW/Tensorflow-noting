@@ -14,7 +14,7 @@
 # limitations under the License.
 
 import tensorflow as tf
-import tensorflowvisu
+import tensorflow_mnist.tensorflowvisu
 import math
 from tensorflow.contrib.learn.python.learn.datasets.mnist import read_data_sets
 tf.set_random_seed(0)
@@ -90,9 +90,9 @@ accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 # matplotlib visualisation
 allweights = tf.concat([tf.reshape(W1, [-1]), tf.reshape(W2, [-1]), tf.reshape(W3, [-1]), tf.reshape(W4, [-1]), tf.reshape(W5, [-1])], 0)
 allbiases  = tf.concat([tf.reshape(B1, [-1]), tf.reshape(B2, [-1]), tf.reshape(B3, [-1]), tf.reshape(B4, [-1]), tf.reshape(B5, [-1])], 0)
-I = tensorflowvisu.tf_format_mnist_images(X, Y, Y_)
-It = tensorflowvisu.tf_format_mnist_images(X, Y, Y_, 1000, lines=25)
-datavis = tensorflowvisu.MnistDataVis()
+I = tensorflow_mnist.tensorflowvisu.tf_format_mnist_images(X, Y, Y_)
+It = tensorflow_mnist.tensorflowvisu.tf_format_mnist_images(X, Y, Y_, 1000, lines=25)
+datavis = tensorflow_mnist.tensorflowvisu.MnistDataVis()
 
 # training step, the learning rate is a placeholder
 train_step = tf.train.AdamOptimizer(lr).minimize(cross_entropy)
@@ -125,7 +125,8 @@ def training_step(i, update_test_data, update_train_data):
     # compute test values for visualisation
     if update_test_data:
         a, c, im = sess.run([accuracy, cross_entropy, It], {X: mnist.test.images, Y_: mnist.test.labels})
-        print(str(i) + ": ********* epoch " + str(i*100//mnist.train.images.shape[0]+1) + " ********* test accuracy:" + str(a) + " test loss: " + str(c))
+        print(str(i) + ": ********* epoch " + str(i*100//mnist.train.images.shape[0]+1)
+              + " ********* test accuracy:" + str(a) + " test loss: " + str(c))
         datavis.append_test_curves_data(i, a, c)
         datavis.update_image2(im)
 
@@ -143,10 +144,17 @@ print("max test accuracy: " + str(datavis.get_max_test_accuracy()))
 # layers 4 8 12 200, patches 5x5str1 5x5str2 4x4str2 best 0.989 after 10000 iterations
 # layers 4 8 12 200, patches 5x5str1 4x4str2 4x4str2 best 0.9892 after 10000 iterations
 # layers 6 12 24 200, patches 5x5str1 4x4str2 4x4str2 best 0.9908 after 10000 iterations but going downhill from 5000 on
-# layers 6 12 24 200, patches 5x5str1 4x4str2 4x4str2 dropout=0.75 best 0.9922 after 10000 iterations (but above 0.99 after 1400 iterations only)
+# layers 6 12 24 200, patches 5x5str1 4x4str2 4x4str2 dropout=0.75
+# best 0.9922 after 10000 iterations (but above 0.99 after 1400 iterations only)
 # layers 4 8 12 200, patches 5x5str1 4x4str2 4x4str2 dropout=0.75, best 0.9914 at 13700 iterations
-# layers 9 16 25 200, patches 5x5str1 4x4str2 4x4str2 dropout=0.75, best 0.9918 at 10500 (but 0.99 at 1500 iterations already, 0.9915 at 5800)
-# layers 9 16 25 300, patches 5x5str1 4x4str2 4x4str2 dropout=0.75, best 0.9916 at 5500 iterations (but 0.9903 at 1200 iterations already)
-# attempts with 2 fully-connected layers: no better 300 and 100 neurons, dropout 0.75 and 0.5, 6x6 5x5 4x4 patches no better
-#*layers 6 12 24 200, patches 6x6str1 5x5str2 4x4str2 dropout=0.75 best 0.9928 after 12800 iterations (but consistently above 0.99 after 1300 iterations only, 0.9916 at 2300 iterations, 0.9921 at 5600, 0.9925 at 20000)
-# layers 6 12 24 200, patches 6x6str1 5x5str2 4x4str2 no dropout best 0.9906 after 3100 iterations (avove 0.99 from iteration 1400)
+# layers 9 16 25 200, patches 5x5str1 4x4str2 4x4str2 dropout=0.75,
+# best 0.9918 at 10500 (but 0.99 at 1500 iterations already, 0.9915 at 5800)
+# layers 9 16 25 300, patches 5x5str1 4x4str2 4x4str2 dropout=0.75,
+# best 0.9916 at 5500 iterations (but 0.9903 at 1200 iterations already)
+# attempts with 2 fully-connected layers: no better 300 and 100 neurons,
+# dropout 0.75 and 0.5, 6x6 5x5 4x4 patches no better
+#*layers 6 12 24 200, patches 6x6str1 5x5str2 4x4str2 dropout=0.75
+# best 0.9928 after 12800 iterations (but consistently above 0.99
+# after 1300 iterations only, 0.9916 at 2300 iterations, 0.9921 at 5600, 0.9925 at 20000)
+# layers 6 12 24 200, patches 6x6str1 5x5str2 4x4str2 no dropout
+# best 0.9906 after 3100 iterations (avove 0.99 from iteration 1400)
