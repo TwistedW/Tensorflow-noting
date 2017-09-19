@@ -48,8 +48,8 @@ Y = tf.nn.softmax(tf.matmul(XX, W) + b)
 # log takes the log of each element, * multiplies the tensors element by element
 # reduce_mean will add all the components in the tensor
 # so here we end up with the total cross-entropy for all images in the batch
-cross_entropy = -tf.reduce_mean(Y_ * tf.log(Y)) * 1000.0  # normalized for batches of 100 images,
-                                                          # *10 because  "mean" included an unwanted division by 10
+# normalized for batches of 100 images,*10 because  "mean" included an unwanted division by 10
+cross_entropy = -tf.reduce_mean(Y_ * tf.log(Y)) * 1000.0
 
 # accuracy of the trained model, between 0 (worst) and 1 (best)
 correct_prediction = tf.equal(tf.argmax(Y, 1), tf.argmax(Y_, 1))
