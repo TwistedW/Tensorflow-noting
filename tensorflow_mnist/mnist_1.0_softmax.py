@@ -94,7 +94,6 @@ def training_step(i, update_test_data, update_train_data):
         datavis.update_image2(im)
         print(str(i) + ": ********* epoch " + str(i*100//mnist.train.images.shape[0]+1) +
               " ********* test accuracy:" + str(a) + " test loss: " + str(c))
-
     # the backpropagation training step
     sess.run(train_step, feed_dict={X: batch_X, Y_: batch_Y})
 
