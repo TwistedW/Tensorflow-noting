@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6efa088-28d9-45c7-9255-ee986166a1f1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensorflow_mnist/mnist_2.0_five_layers_sigmoid.py" afterPath="$PROJECT_DIR$/tensorflow_mnist/mnist_2.0_five_layers_sigmoid.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensorflow_mnist/mnist_2.1_five_layers_relu_lrdecay.py" afterPath="$PROJECT_DIR$/tensorflow_mnist/mnist_2.1_five_layers_relu_lrdecay.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,7 +31,7 @@
     <SUITE FILE_PATH="coverage/Tensorflow$tensorflow_saver.coverage" NAME="tensorflow_saver Coverage Results" MODIFIED="1495282951533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Tensorflow$tensorflow_visualize_gradient_descent.coverage" NAME="tensorflow_visualize_gradient_descent Coverage Results" MODIFIED="1505531645214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Tensorflow$tensorflow_batch_normalization_new.coverage" NAME="tensorflow_batch_normalization_new Coverage Results" MODIFIED="1498305659540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Tensorflow$mnist_2_0_five_layers_sigmoid.coverage" NAME="mnist_2.0_five_layers_sigmoid Coverage Results" MODIFIED="1505537268058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow_mnist" />
+    <SUITE FILE_PATH="coverage/Tensorflow$mnist_2_0_five_layers_sigmoid.coverage" NAME="mnist_2.0_five_layers_sigmoid Coverage Results" MODIFIED="1506305534037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow_mnist" />
     <SUITE FILE_PATH="coverage/Tensorflow$tensorflow_descent_show.coverage" NAME="tensorflow_descent_show Coverage Results" MODIFIED="1505269703529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Tensorflow$mnist_4_1_batchnorm_five_layers_relu.coverage" NAME="mnist_4.1_batchnorm_five_layers_relu Coverage Results" MODIFIED="1505550520275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tensorflow_mnist" />
     <SUITE FILE_PATH="coverage/Tensorflow$tensorflow_gan.coverage" NAME="tensorflow_gan Coverage Results" MODIFIED="1505288480059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -68,10 +68,22 @@
       <file leaf-file-name="tensorflowvisu.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tensorflow_mnist/tensorflowvisu.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-575">
-              <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+            <state relative-caret-position="167">
+              <caret line="362" column="35" lean-forward="true" selection-start-line="362" selection-start-column="35" selection-end-line="362" selection-end-column="35" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mnist_2.1_five_layers_relu_lrdecay.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tensorflow_mnist/mnist_2.1_five_layers_relu_lrdecay.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-45">
+              <caret line="118" column="16" lean-forward="false" selection-start-line="118" selection-start-column="16" selection-end-line="118" selection-end-column="16" />
+              <folding>
+                <element signature="e#18#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,44 +101,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mnist_2.0_five_layers_sigmoid.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mnist_2.0_five_layers_sigmoid.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tensorflow_mnist/mnist_2.0_five_layers_sigmoid.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="113" column="57" lean-forward="true" selection-start-line="113" selection-start-column="57" selection-end-line="113" selection-end-column="57" />
+            <state relative-caret-position="1830">
+              <caret line="110" column="49" lean-forward="false" selection-start-line="110" selection-start-column="49" selection-end-line="110" selection-end-column="49" />
               <folding>
                 <element signature="e#18#41#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="animation.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/matplotlib/animation.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6550">
-              <caret line="271" column="0" lean-forward="false" selection-start-line="271" selection-start-column="0" selection-end-line="271" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="subprocess.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/subprocess.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24125">
-              <caret line="965" column="36" lean-forward="false" selection-start-line="965" selection-start-column="36" selection-end-line="965" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contextlib.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/contextlib.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1400">
-              <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -191,7 +173,6 @@
         <option value="$PROJECT_DIR$/tensorflow_RNN_new.py" />
         <option value="$PROJECT_DIR$/tensorflow_visualize_gradient_descent.py" />
         <option value="$PROJECT_DIR$/tensorflow-mnist/mnist_1.0_softmax.py" />
-        <option value="$PROJECT_DIR$/tensorflow_mnist/mnist_2.1_five_layers_relu_lrdecay.py" />
         <option value="$PROJECT_DIR$/tensorflow_mnist/mnist_2.2_five_layers_relu_lrdecay_dropout.py" />
         <option value="$PROJECT_DIR$/tensorflow_mnist/mnist_3.0_convolutional.py" />
         <option value="$PROJECT_DIR$/tensorflow_mnist/mnist_3.1_convolutional_bigger_dropout.py" />
@@ -202,6 +183,7 @@
         <option value="$PROJECT_DIR$/tensorflow_mnist/tensorflowvisu.py" />
         <option value="$PROJECT_DIR$/tensorflow_mnist/mnist_1.0_softmax.py" />
         <option value="$PROJECT_DIR$/tensorflow_mnist/mnist_2.0_five_layers_sigmoid.py" />
+        <option value="$PROJECT_DIR$/tensorflow_mnist/mnist_2.1_five_layers_relu_lrdecay.py" />
       </list>
     </option>
   </component>
@@ -282,26 +264,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.mnist_1.0_softmax">
-    <configuration default="false" name="mnist_3.0_convolutional" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tensorflow_mnist" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Tensorflow" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tensorflow_mnist/mnist_3.0_convolutional.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.mnist_2.0_five_layers_sigmoid">
     <configuration default="false" name="mnist_4.0_batchnorm_five_layers_sigmoid" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -373,6 +336,25 @@
       <module name="Tensorflow" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tensorflow_mnist/mnist_1.0_softmax.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="mnist_2.0_five_layers_sigmoid" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tensorflow_mnist" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Tensorflow" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tensorflow_mnist/mnist_2.0_five_layers_sigmoid.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -544,19 +526,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in tensorflow_scope_RNN_example.py" />
-      <item index="1" class="java.lang.String" itemvalue="Python.mnist_3.0_convolutional" />
-      <item index="2" class="java.lang.String" itemvalue="Python.mnist_4.0_batchnorm_five_layers_sigmoid" />
-      <item index="3" class="java.lang.String" itemvalue="Python.mnist_4.1_batchnorm_five_layers_relu" />
-      <item index="4" class="java.lang.String" itemvalue="Python.mnist_4.2_batchnorm_convolutional" />
-      <item index="5" class="java.lang.String" itemvalue="Python.mnist_1.0_softmax" />
+      <item index="1" class="java.lang.String" itemvalue="Python.mnist_4.0_batchnorm_five_layers_sigmoid" />
+      <item index="2" class="java.lang.String" itemvalue="Python.mnist_4.1_batchnorm_five_layers_relu" />
+      <item index="3" class="java.lang.String" itemvalue="Python.mnist_4.2_batchnorm_convolutional" />
+      <item index="4" class="java.lang.String" itemvalue="Python.mnist_1.0_softmax" />
+      <item index="5" class="java.lang.String" itemvalue="Python.mnist_2.0_five_layers_sigmoid" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.mnist_1.0_softmax" />
-        <item index="1" class="java.lang.String" itemvalue="Python.mnist_4.2_batchnorm_convolutional" />
-        <item index="2" class="java.lang.String" itemvalue="Python.mnist_4.1_batchnorm_five_layers_relu" />
-        <item index="3" class="java.lang.String" itemvalue="Python.mnist_4.0_batchnorm_five_layers_sigmoid" />
-        <item index="4" class="java.lang.String" itemvalue="Python.mnist_3.0_convolutional" />
+        <item index="0" class="java.lang.String" itemvalue="Python.mnist_2.0_five_layers_sigmoid" />
+        <item index="1" class="java.lang.String" itemvalue="Python.mnist_1.0_softmax" />
+        <item index="2" class="java.lang.String" itemvalue="Python.mnist_4.2_batchnorm_convolutional" />
+        <item index="3" class="java.lang.String" itemvalue="Python.mnist_4.1_batchnorm_five_layers_relu" />
+        <item index="4" class="java.lang.String" itemvalue="Python.mnist_4.0_batchnorm_five_layers_sigmoid" />
       </list>
     </recent_temporary>
   </component>
@@ -613,7 +595,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20347004" sideWeight="0.5058565" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12618296" sideWeight="0.4941435" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10883281" sideWeight="0.4941435" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -877,13 +859,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow_mnist/mnist_2.1_five_layers_relu_lrdecay.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1019">
-          <caret line="92" column="6" lean-forward="true" selection-start-line="92" selection-start-column="6" selection-end-line="92" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tensorflow_mnist/mnist_2.2_five_layers_relu_lrdecay_dropout.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-852">
@@ -998,8 +973,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tensorflow_mnist/tensorflowvisu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-575">
-          <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+        <state relative-caret-position="167">
+          <caret line="362" column="35" lean-forward="true" selection-start-line="362" selection-start-column="35" selection-end-line="362" selection-end-column="35" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
@@ -1008,8 +983,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tensorflow_mnist/mnist_2.0_five_layers_sigmoid.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="113" column="57" lean-forward="true" selection-start-line="113" selection-start-column="57" selection-end-line="113" selection-end-column="57" />
+        <state relative-caret-position="1830">
+          <caret line="110" column="49" lean-forward="false" selection-start-line="110" selection-start-column="49" selection-end-line="110" selection-end-column="49" />
+          <folding>
+            <element signature="e#18#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow_mnist/mnist_2.1_five_layers_relu_lrdecay.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-45">
+          <caret line="118" column="16" lean-forward="false" selection-start-line="118" selection-start-column="16" selection-end-line="118" selection-end-column="16" />
           <folding>
             <element signature="e#18#41#0" expanded="true" />
           </folding>
