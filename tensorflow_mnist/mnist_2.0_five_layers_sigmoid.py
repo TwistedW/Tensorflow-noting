@@ -1,18 +1,4 @@
 # encoding: UTF-8
-# Copyright 2016 Google.com
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-# http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
 import tensorflow as tf
 import tensorflow_mnist.tensorflowvisu
 from tensorflow.contrib.learn.python.learn.datasets.mnist import read_data_sets
@@ -47,16 +33,16 @@ N = 60
 O = 30
 # Weights initialised with small random values between -0.2 and +0.2
 # When using RELUs, make sure biases are initialised with small *positive* values for example 0.1 = tf.ones([K])/10
-W1 = tf.Variable(tf.truncated_normal([784, L], stddev=0.1))  # 784 = 28 * 28
-B1 = tf.Variable(tf.zeros([L]))
+W1 = tf.Variable(tf.truncated_normal([784, L], stddev=0.1))  # 784 = 28 * 28 正太分布
+B1 = tf.Variable(tf.zeros([L])+0.1)
 W2 = tf.Variable(tf.truncated_normal([L, M], stddev=0.1))
-B2 = tf.Variable(tf.zeros([M]))
+B2 = tf.Variable(tf.zeros([M])+0.1)
 W3 = tf.Variable(tf.truncated_normal([M, N], stddev=0.1))
-B3 = tf.Variable(tf.zeros([N]))
+B3 = tf.Variable(tf.zeros([N])+0.1)
 W4 = tf.Variable(tf.truncated_normal([N, O], stddev=0.1))
-B4 = tf.Variable(tf.zeros([O]))
+B4 = tf.Variable(tf.zeros([O])+0.1)
 W5 = tf.Variable(tf.truncated_normal([O, 10], stddev=0.1))
-B5 = tf.Variable(tf.zeros([10]))
+B5 = tf.Variable(tf.zeros([10])+0.1)
 
 # The model
 XX = tf.reshape(X, [-1, 784])
@@ -78,8 +64,10 @@ correct_prediction = tf.equal(tf.argmax(Y, 1), tf.argmax(Y_, 1))
 accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 
 # matplotlib visualisation
-allweights = tf.concat([tf.reshape(W1, [-1]), tf.reshape(W2, [-1]), tf.reshape(W3, [-1]), tf.reshape(W4, [-1]), tf.reshape(W5, [-1])], 0)
-allbiases  = tf.concat([tf.reshape(B1, [-1]), tf.reshape(B2, [-1]), tf.reshape(B3, [-1]), tf.reshape(B4, [-1]), tf.reshape(B5, [-1])], 0)
+allweights = tf.concat([tf.reshape(W1, [-1]), tf.reshape(W2, [-1]), tf.reshape(W3, [-1]),
+                        tf.reshape(W4, [-1]), tf.reshape(W5, [-1])], 0)
+allbiases  = tf.concat([tf.reshape(B1, [-1]), tf.reshape(B2, [-1]), tf.reshape(B3, [-1]),
+                        tf.reshape(B4, [-1]), tf.reshape(B5, [-1])], 0)
 I = tensorflow_mnist.tensorflowvisu.tf_format_mnist_images(X, Y, Y_)
 It = tensorflow_mnist.tensorflowvisu.tf_format_mnist_images(X, Y, Y_, 1000, lines=25)
 datavis = tensorflow_mnist.tensorflowvisu.MnistDataVis()
