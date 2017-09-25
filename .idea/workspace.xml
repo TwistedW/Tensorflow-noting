@@ -92,8 +92,8 @@
       <file leaf-file-name="mnist_2.0_five_layers_sigmoid.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tensorflow_mnist/mnist_2.0_five_layers_sigmoid.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="102" column="14" lean-forward="false" selection-start-line="102" selection-start-column="14" selection-end-line="102" selection-end-column="14" />
+            <state relative-caret-position="275">
+              <caret line="113" column="57" lean-forward="true" selection-start-line="113" selection-start-column="57" selection-end-line="113" selection-end-column="57" />
               <folding>
                 <element signature="e#18#41#0" expanded="true" />
               </folding>
@@ -1008,8 +1008,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tensorflow_mnist/mnist_2.0_five_layers_sigmoid.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="102" column="14" lean-forward="false" selection-start-line="102" selection-start-column="14" selection-end-line="102" selection-end-column="14" />
+        <state relative-caret-position="275">
+          <caret line="113" column="57" lean-forward="true" selection-start-line="113" selection-start-column="57" selection-end-line="113" selection-end-column="57" />
           <folding>
             <element signature="e#18#41#0" expanded="true" />
           </folding>
