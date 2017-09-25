@@ -1,18 +1,4 @@
 # encoding: UTF-8
-# Copyright 2016 Google.com
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-# http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
 import tensorflow as tf
 import tensorflow_mnist.tensorflowvisu
 import math
@@ -92,8 +78,10 @@ correct_prediction = tf.equal(tf.argmax(Y, 1), tf.argmax(Y_, 1))
 accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 
 # matplotlib visualisation
-allweights = tf.concat([tf.reshape(W1, [-1]), tf.reshape(W2, [-1]), tf.reshape(W3, [-1]), tf.reshape(W4, [-1]), tf.reshape(W5, [-1])], 0)
-allbiases  = tf.concat([tf.reshape(B1, [-1]), tf.reshape(B2, [-1]), tf.reshape(B3, [-1]), tf.reshape(B4, [-1]), tf.reshape(B5, [-1])], 0)
+allweights = tf.concat([tf.reshape(W1, [-1]), tf.reshape(W2, [-1]), tf.reshape(W3, [-1]),
+                        tf.reshape(W4, [-1]), tf.reshape(W5, [-1])], 0)
+allbiases  = tf.concat([tf.reshape(B1, [-1]), tf.reshape(B2, [-1]), tf.reshape(B3, [-1]),
+                        tf.reshape(B4, [-1]), tf.reshape(B5, [-1])], 0)
 I = tensorflow_mnist.tensorflowvisu.tf_format_mnist_images(X, Y, Y_)
 It = tensorflow_mnist.tensorflowvisu.tf_format_mnist_images(X, Y, Y_, 1000, lines=25)
 datavis = tensorflow_mnist.tensorflowvisu.MnistDataVis()
@@ -121,7 +109,8 @@ def training_step(i, update_test_data, update_train_data):
 
     # compute training values for visualisation
     if update_train_data:
-        a, c, im, w, b = sess.run([accuracy, cross_entropy, I, allweights, allbiases], {X: batch_X, Y_: batch_Y, pkeep: 1.0})
+        a, c, im, w, b = sess.run([accuracy, cross_entropy, I, allweights, allbiases],
+                                  {X: batch_X, Y_: batch_Y, pkeep: 1.0})
         print(str(i) + ": accuracy:" + str(a) + " loss: " + str(c) + " (lr:" + str(learning_rate) + ")")
         datavis.append_training_curves_data(i, a, c)
         datavis.update_image1(im)
@@ -130,14 +119,16 @@ def training_step(i, update_test_data, update_train_data):
     # compute test values for visualisation
     if update_test_data:
         a, c, im = sess.run([accuracy, cross_entropy, It], {X: mnist.test.images, Y_: mnist.test.labels, pkeep: 1.0})
-        print(str(i) + ": ********* epoch " + str(i*100//mnist.train.images.shape[0]+1) + " ********* test accuracy:" + str(a) + " test loss: " + str(c))
+        print(str(i) + ": ********* epoch " + str(i*100//mnist.train.images.shape[0]+1) +
+              " ********* test accuracy:" + str(a) + " test loss: " + str(c))
         datavis.append_test_curves_data(i, a, c)
         datavis.update_image2(im)
 
     # the backpropagation training step
     sess.run(train_step, {X: batch_X, Y_: batch_Y, pkeep: 0.75, lr: learning_rate})
 
-datavis.animate(training_step, iterations=10000+1, train_data_update_freq=20, test_data_update_freq=100, more_tests_at_start=True)
+datavis.animate(training_step, iterations=10000+1, train_data_update_freq=20, test_data_update_freq=100,
+                more_tests_at_start=True)
 
 # to save the animation as a movie, add save_movie=True as an argument to datavis.animate
 # to disable the visualisation use the following line instead of the datavis.animate line
@@ -150,8 +141,10 @@ print("max test accuracy: " + str(datavis.get_max_test_accuracy()))
 # all biases are initialised at 0.1 apart from the last one which is initialised at 0.)
 
 ## test with and without dropout, decaying learning rate from 0.003 to 0.0001 decay_speed 2000, 10K iterations
-# final test accuracy = 0.9817 (relu, dropout 0.75, training cross-entropy still a bit noisy, test cross-entropy stable, test accuracy stable just under 98.2)
-# final test accuracy = 0.9824 (relu, no dropout, training cross-entropy down to 0, test cross-entropy goes up significantly, test accuracy stable around 98.2)
+# final test accuracy = 0.9817 (relu, dropout 0.75, training cross-entropy still a bit noisy,
+# test cross-entropy stable, test accuracy stable just under 98.2)
+# final test accuracy = 0.9824 (relu, no dropout, training cross-entropy down to 0, test
+# cross-entropy goes up significantly, test accuracy stable around 98.2)
 
 ## learning rate = 0.003, 10K iterations, no dropout
 # final test accuracy = 0.9788 (sigmoid - slow start, training cross-entropy not stabilised in the end)
@@ -162,5 +155,6 @@ print("max test accuracy: " + str(datavis.get_max_test_accuracy()))
 
 ## decaying learning rate from 0.003 to 0.0001 decay_speed 2000, 10K iterations, no dropout
 # final test accuracy = 0.9746 (sigmoid - training cross-entropy not stabilised)
-# final test accuracy = 0.9824 (relu, training cross-entropy down to 0, test cross-entropy goes up significantly, test accuracy stable around 98.2)
+# final test accuracy = 0.9824 (relu, training cross-entropy down to 0, test cross-entropy goes up
+# significantly, test accuracy stable around 98.2)
 # on another run, peak at 0.9836
