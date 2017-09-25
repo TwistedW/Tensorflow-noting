@@ -65,7 +65,7 @@ accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 
 # matplotlib visualisation
 allweights = tf.concat([tf.reshape(W1, [-1]), tf.reshape(W2, [-1]), tf.reshape(W3, [-1]),
-                        tf.reshape(W4, [-1]), tf.reshape(W5, [-1])], 0)
+                        tf.reshape(W4, [-1]), tf.reshape(W5, [-1])], 0)#拼接
 allbiases  = tf.concat([tf.reshape(B1, [-1]), tf.reshape(B2, [-1]), tf.reshape(B3, [-1]),
                         tf.reshape(B4, [-1]), tf.reshape(B5, [-1])], 0)
 I = tensorflow_mnist.tensorflowvisu.tf_format_mnist_images(X, Y, Y_)
@@ -99,7 +99,8 @@ def training_step(i, update_test_data, update_train_data):
     # compute test values for visualisation
     if update_test_data:
         a, c, im = sess.run([accuracy, cross_entropy, It], {X: mnist.test.images, Y_: mnist.test.labels})
-        print(str(i) + ": ********* epoch " + str(i*100//mnist.train.images.shape[0]+1) + " ********* test accuracy:" + str(a) + " test loss: " + str(c))
+        print(str(i) + ": ********* epoch " + str(i*100//mnist.train.images.shape[0]+1) +
+              " ********* test accuracy:" + str(a) + " test loss: " + str(c))
         datavis.append_test_curves_data(i, a, c)
         datavis.update_image2(im)
 
