@@ -1,18 +1,4 @@
 # encoding: UTF-8
-# Copyright 2016 Google.com
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-# http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
 import tensorflow as tf
 import tensorflow_mnist.tensorflowvisu
 import math
@@ -26,15 +12,15 @@ mnist = read_data_sets("data", one_hot=True, reshape=False, validation_size=0)
 #
 # · · · · · · · · · ·      (input data, 1-deep)                 X [batch, 28, 28, 1]
 # @ @ @ @ @ @ @ @ @ @   -- conv. layer 5x5x1=>4 stride 1        W1 [5, 5, 1, 4]        B1 [4]
-# ∶∶∶∶∶∶∶∶∶∶∶∶∶∶∶∶∶∶∶                                           Y1 [batch, 28, 28, 4]
+# ∶∶∶∶∶∶∶∶∶∶∶∶∶∶∶∶∶∶∶Y1 [batch, 28, 28, 4]
 #   @ @ @ @ @ @ @ @     -- conv. layer 5x5x4=>8 stride 2        W2 [5, 5, 4, 8]        B2 [8]
-#   ∶∶∶∶∶∶∶∶∶∶∶∶∶∶∶                                             Y2 [batch, 14, 14, 8]
+#   ∶∶∶∶∶∶∶∶∶∶∶∶∶∶∶Y2 [batch, 14, 14, 8]
 #     @ @ @ @ @ @       -- conv. layer 4x4x8=>12 stride 2       W3 [4, 4, 8, 12]       B3 [12]
-#     ∶∶∶∶∶∶∶∶∶∶∶                                               Y3 [batch, 7, 7, 12] => reshaped to YY [batch, 7*7*12]
+#     ∶∶∶∶∶∶∶∶∶∶∶Y3 [batch, 7, 7, 12] => reshaped to YY [batch, 7*7*12]
 #      \x/x\x\x/        -- fully connected layer (relu)         W4 [7*7*12, 200]       B4 [200]
-#       · · · ·                                                 Y4 [batch, 200]
+#       · · · ·               Y4 [batch, 200]
 #       \x/x\x/         -- fully connected layer (softmax)      W5 [200, 10]           B5 [10]
-#        · · ·                                                  Y [batch, 20]
+#        · · ·                  Y [batch, 10]
 
 # input X: 28x28 grayscale images, the first dimension (None) will index the images in the mini-batch
 X = tf.placeholder(tf.float32, [None, 28, 28, 1])
@@ -88,8 +74,10 @@ correct_prediction = tf.equal(tf.argmax(Y, 1), tf.argmax(Y_, 1))
 accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 
 # matplotlib visualisation
-allweights = tf.concat([tf.reshape(W1, [-1]), tf.reshape(W2, [-1]), tf.reshape(W3, [-1]), tf.reshape(W4, [-1]), tf.reshape(W5, [-1])], 0)
-allbiases  = tf.concat([tf.reshape(B1, [-1]), tf.reshape(B2, [-1]), tf.reshape(B3, [-1]), tf.reshape(B4, [-1]), tf.reshape(B5, [-1])], 0)
+allweights = tf.concat([tf.reshape(W1, [-1]), tf.reshape(W2, [-1]), tf.reshape(W3, [-1]),
+                        tf.reshape(W4, [-1]), tf.reshape(W5, [-1])], 0)
+allbiases  = tf.concat([tf.reshape(B1, [-1]), tf.reshape(B2, [-1]), tf.reshape(B3, [-1]),
+                        tf.reshape(B4, [-1]), tf.reshape(B5, [-1])], 0)
 I = tensorflow_mnist.tensorflowvisu.tf_format_mnist_images(X, Y, Y_)
 It = tensorflow_mnist.tensorflowvisu.tf_format_mnist_images(X, Y, Y_, 1000, lines=25)
 datavis = tensorflow_mnist.tensorflowvisu.MnistDataVis()
