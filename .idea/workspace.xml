@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6efa088-28d9-45c7-9255-ee986166a1f1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensorflow_mnist/tensorflowvisu_digits.py" afterPath="$PROJECT_DIR$/tensorflow_mnist/tensorflowvisu_digits.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tensorflow_mnist/mnist_2.1_five_layers_relu_lrdecay.py" afterPath="$PROJECT_DIR$/tensorflow_mnist/mnist_2.1_five_layers_relu_lrdecay.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -68,7 +69,7 @@
       <file leaf-file-name="tensorflowvisu.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tensorflow_mnist/tensorflowvisu.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8525">
+            <state relative-caret-position="9050">
               <caret line="362" column="35" lean-forward="false" selection-start-line="362" selection-start-column="35" selection-end-line="362" selection-end-column="35" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
@@ -77,14 +78,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mnist_2.2_five_layers_relu_lrdecay_dropout.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tensorflow_mnist/mnist_2.2_five_layers_relu_lrdecay_dropout.py">
+      <file leaf-file-name="mnist_2.1_five_layers_relu_lrdecay.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tensorflow_mnist/mnist_2.1_five_layers_relu_lrdecay.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3875">
-              <caret line="158" column="2" lean-forward="false" selection-start-line="158" selection-start-column="2" selection-end-line="158" selection-end-column="2" />
-              <folding>
-                <element signature="e#18#41#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="258">
+              <caret line="110" column="41" lean-forward="false" selection-start-line="110" selection-start-column="41" selection-end-line="110" selection-end-column="41" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -92,7 +91,7 @@
       <file leaf-file-name="mnist_3.0_convolutional.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tensorflow_mnist/mnist_3.0_convolutional.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1301">
+            <state relative-caret-position="1900">
               <caret line="79" column="24" lean-forward="false" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="24" />
               <folding>
                 <element signature="e#18#41#0" expanded="true" />
@@ -104,7 +103,7 @@
       <file leaf-file-name="mnist_3.1_convolutional_bigger_dropout.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tensorflow_mnist/mnist_3.1_convolutional_bigger_dropout.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="3775">
               <caret line="154" column="0" lean-forward="false" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
               <folding>
                 <element signature="e#18#41#0" expanded="true" />
@@ -116,7 +115,7 @@
       <file leaf-file-name="mnist_4.1_batchnorm_five_layers_relu.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tensorflow_mnist/mnist_4.1_batchnorm_five_layers_relu.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-525">
+            <state relative-caret-position="0">
               <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
               <folding>
                 <element signature="e#18#41#0" expanded="true" />
@@ -129,17 +128,17 @@
         <entry file="file://$PROJECT_DIR$/tensorflow_mnist/mnist_4.2_batchnorm_convolutional.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="3" column="56" lean-forward="true" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
+              <caret line="3" column="56" lean-forward="false" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tensorflowvisu_digits.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tensorflowvisu_digits.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tensorflow_mnist/tensorflowvisu_digits.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+            <state relative-caret-position="300">
+              <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -148,7 +147,7 @@
       <file leaf-file-name="mnist_4.0_batchnorm_five_layers_sigmoid.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tensorflow_mnist/mnist_4.0_batchnorm_five_layers_sigmoid.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
+            <state relative-caret-position="2150">
               <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
               <folding>
                 <element signature="e#18#41#0" expanded="true" />
@@ -160,7 +159,7 @@
       <file leaf-file-name="mnist_2.0_five_layers_sigmoid.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tensorflow_mnist/mnist_2.0_five_layers_sigmoid.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-126">
+            <state relative-caret-position="2700">
               <caret line="110" column="49" lean-forward="false" selection-start-line="110" selection-start-column="49" selection-end-line="110" selection-end-column="49" />
               <folding>
                 <element signature="e#18#41#0" expanded="true" />
@@ -172,8 +171,8 @@
       <file leaf-file-name="tensorflowvisu.mplstyle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tensorflow_mnist/tensorflowvisu.mplstyle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-442">
-              <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+            <state relative-caret-position="475">
+              <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -242,7 +241,6 @@
         <option value="$PROJECT_DIR$/tensorflow_mnist/tensorflowvisu.py" />
         <option value="$PROJECT_DIR$/tensorflow_mnist/mnist_1.0_softmax.py" />
         <option value="$PROJECT_DIR$/tensorflow_mnist/mnist_2.0_five_layers_sigmoid.py" />
-        <option value="$PROJECT_DIR$/tensorflow_mnist/mnist_2.1_five_layers_relu_lrdecay.py" />
         <option value="$PROJECT_DIR$/tensorflow_mnist/mnist_2.2_five_layers_relu_lrdecay_dropout.py" />
         <option value="$PROJECT_DIR$/tensorflow_mnist/mnist_3.0_convolutional.py" />
         <option value="$PROJECT_DIR$/tensorflow_mnist/mnist_3.1_convolutional_bigger_dropout.py" />
@@ -250,6 +248,7 @@
         <option value="$PROJECT_DIR$/tensorflow_mnist/mnist_4.1_batchnorm_five_layers_relu.py" />
         <option value="$PROJECT_DIR$/tensorflow_mnist/mnist_4.2_batchnorm_convolutional.py" />
         <option value="$PROJECT_DIR$/tensorflow_mnist/tensorflowvisu_digits.py" />
+        <option value="$PROJECT_DIR$/tensorflow_mnist/mnist_2.1_five_layers_relu_lrdecay.py" />
       </list>
     </option>
   </component>
@@ -661,13 +660,13 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20347004" sideWeight="0.5058565" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10883281" sideWeight="0.4941435" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10883281" sideWeight="0.4941435" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39905363" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -971,19 +970,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2600">
           <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
-          <folding>
-            <element signature="e#18#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow_mnist/mnist_2.1_five_layers_relu_lrdecay.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3200">
-          <caret line="131" column="80" lean-forward="false" selection-start-line="131" selection-start-column="80" selection-end-line="131" selection-end-column="80" />
-          <folding>
-            <element signature="e#18#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -999,7 +985,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tensorflow_mnist/mnist_4.0_batchnorm_five_layers_sigmoid.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
+        <state relative-caret-position="2150">
           <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
           <folding>
             <element signature="e#18#41#0" expanded="true" />
@@ -1009,7 +995,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tensorflow_mnist/mnist_2.0_five_layers_sigmoid.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-126">
+        <state relative-caret-position="2700">
           <caret line="110" column="49" lean-forward="false" selection-start-line="110" selection-start-column="49" selection-end-line="110" selection-end-column="49" />
           <folding>
             <element signature="e#18#41#0" expanded="true" />
@@ -1019,25 +1005,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tensorflow_mnist/tensorflowvisu.mplstyle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-442">
-          <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+        <state relative-caret-position="475">
+          <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow_mnist/tensorflowvisu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8525">
-          <caret line="362" column="35" lean-forward="false" selection-start-line="362" selection-start-column="35" selection-end-line="362" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tensorflow_mnist/mnist_3.0_convolutional.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1301">
+        <state relative-caret-position="1900">
           <caret line="79" column="24" lean-forward="false" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="24" />
           <folding>
             <element signature="e#18#41#0" expanded="true" />
@@ -1047,7 +1023,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tensorflow_mnist/mnist_3.1_convolutional_bigger_dropout.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+        <state relative-caret-position="3775">
           <caret line="154" column="0" lean-forward="false" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
           <folding>
             <element signature="e#18#41#0" expanded="true" />
@@ -1057,7 +1033,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tensorflow_mnist/mnist_4.1_batchnorm_five_layers_relu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-525">
+        <state relative-caret-position="0">
           <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
           <folding>
             <element signature="e#18#41#0" expanded="true" />
@@ -1068,15 +1044,33 @@
     <entry file="file://$PROJECT_DIR$/tensorflow_mnist/mnist_4.2_batchnorm_convolutional.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="3" column="56" lean-forward="true" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
+          <caret line="3" column="56" lean-forward="false" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tensorflow_mnist/tensorflowvisu_digits.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+        <state relative-caret-position="300">
+          <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow_mnist/tensorflowvisu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9050">
+          <caret line="362" column="35" lean-forward="false" selection-start-line="362" selection-start-column="35" selection-end-line="362" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow_mnist/mnist_2.1_five_layers_relu_lrdecay.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="110" column="41" lean-forward="false" selection-start-line="110" selection-start-column="41" selection-end-line="110" selection-end-column="41" />
           <folding />
         </state>
       </provider>

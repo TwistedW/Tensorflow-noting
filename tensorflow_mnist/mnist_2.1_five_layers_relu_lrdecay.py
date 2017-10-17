@@ -108,7 +108,7 @@ def training_step(i, update_test_data, update_train_data):
     if update_test_data:
         a, c, im = sess.run([accuracy, cross_entropy, It], {X: mnist.test.images, Y_: mnist.test.labels})
         print(str(i) + ": ********* epoch " + str(i*100//mnist.train.images.shape[0]+1) +
-              " ********* test accuracy:" + str(a) + " test loss: " + str(c))
+              " ********* test accuracy: " + str(a) + " test loss: " + str(c))
         datavis.append_test_curves_data(i, a, c)
         datavis.update_image2(im)
 
