@@ -28,6 +28,7 @@ noise = np.random.randn(200)/10
 y = y_fun(*REAL_PARAMS) + noise         # target
 
 # tensorflow graph
+
 a, b = [tf.Variable(initial_value=p, dtype=tf.float32) for p in INIT_PARAMS]
 pred = tf_y_fun(a, b)
 mse = tf.reduce_mean(tf.square(y-pred))
@@ -39,8 +40,9 @@ with tf.Session() as sess:
     for t in range(400):
         a_, b_, mse_ = sess.run([a, b, mse])
         a_list.append(a_); b_list.append(b_); cost_list.append(mse_)    # record parameter changes
-        result, _ = sess.run([pred, train_op])                          # training
-
+        result, _ = sess.run([pred, train_op]) # training
+        if(t%10==0):
+            print('loss=', mse_)
 
 print('a=', a_, 'b=', b_)
 plt.figure(1)
