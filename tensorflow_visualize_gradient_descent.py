@@ -42,7 +42,7 @@ with tf.Session() as sess:
         a_list.append(a_); b_list.append(b_); cost_list.append(mse_)    # record parameter changes
         result, _ = sess.run([pred, train_op]) # training
         if(t%10==0):
-            print('loss=', mse_)
+            print('train step',t,'loss=', mse_)
 
 print('a=', a_, 'b=', b_)
 plt.figure(1)
